@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>人脸检测</title>
+		<!--[if lte IE 9]><script>window.location.href='http://cdn.dmeng.net/upgrade-your-browser.html?referrer='+location.href;</script><![endif]-->
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/nav.css" />
+		<link rel="stylesheet" href="css/face1.css" />
+	</head>
+	<body>
+		<nav class="nav_box">
+			<div class="left_logo">
+				<a href="index.html"><img id="index_img" src="img/nav/logo.png"/></a>
+			</div>
+			<div class="midia_title" id="midia_title1">
+				<h4>与人工智能时代独立思考者同行</h4>
+				<p class="midia_p">Independent Thinkers of The AI Age</p>
+			</div>
+			<div class="midia_title" id="midia_title2">
+				<img src="img/nav/nav_title.png" />
+			</div>
+			<div class="right_nav">
+				<div class="nav_textbox">
+					<div class="nav_text">
+						<a href="javascript:void(0)">体系 </a><span class="a_span">|</span>
+						<div class="nav_text2_1">
+							<div class="nav_text2_1a"><a href="system.html">研发体系</a></div>
+							<div class="nav_text2_1a"><a href="demand.html">应用需求体系</a></div>
+						</div>
+					</div>
+					<div class="nav_text">
+						<a href="javascript:void(0)">我们</a><span class="a_span">|</span>
+						<div class="nav_text2_1">
+							<div class="nav_text2_1a"><a href="recruitment.html">加入我们</a></div>
+						</div>
+					</div>
+					<div class="nav_text">
+						<a href="javascript:void(0)">公益 </a><span class="a_span">|</span>
+						<div class="nav_text2_1">
+							<div class="nav_text2_1a"><a href="welfare.html">公益公开课</a></div>
+						</div>
+					</div>
+					<div class="nav_english"><a href="javascript:void(0)"><img  src="img/nav/english_icon.png"/></a></div>
+				</div>
+			</div>
+			<div class="menu">
+				<img src="img/nav/menu_icon.png" />
+			</div>
+			<div class="menu2">
+				<div class="menu2_child">
+					<a href="system.html">研发体系</a>
+				</div>
+				<div class="menu2_child">
+					<a href="demand.html">应用需求体系</a>
+				</div>
+				<div class="menu2_child">
+					<a href="welfare.html">公益公开课</a>
+				</div>
+				<div class="menu2_child menu2_child2">
+					<a href="recruitment.html">加入我们</a>
+				</div>
+				<div class="menu2_child">
+					<a href="en_index.html">English</a>
+				</div>
+			</div>
+		</nav>
+		<div id="app" class="max_box">
+			<!--标题部分-->
+			<div class="title_box">
+				<div class="title_text">
+					<div class="dis_table">
+						<div class="cell">
+							<div class="titletext_box">
+								<h1>人脸检测</h1>
+								<div class="line"></div>
+								<div class="titeng_text">Face detection</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="title_two">
+					<p>检测并定位图片中的人脸</p>
+					<p>返回高精度的人脸框坐标</p>
+				</div>
+				<img class="bg_img" src="img/face1/title_bg.png"/>
+				
+				<!--内容部分(人脸检测)-->
+				<!--<div class="max_content">
+					<div class="min_content">
+						<div class="title_jump">
+							<div class="left_titel col-lg-6 col-md-6">
+								<h2>人脸检测</h2>
+								<p>检测并定位图片中的人脸，返回高精度的人脸框坐标。</p>
+							</div>
+							<div class="right_titel col-lg-6 col-md-6">
+								<div class="right_content">
+									<p>人体识别体验模式</p>
+									<ul>
+										<li class="li_active">人脸检测</li>
+										<li >人脸对比</li>
+										<li >人脸集合</li>
+										<li >人脸搜索</li>
+										<div class="clear"></div>
+									</ul>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="bottom_content">
+							<div class="left_titel title_url col-lg-6 col-md-6">
+                                <div class="upload_box">
+                                	<div class="upload_img">
+                                		<img src="img/face1/img1.png" />
+                                	</div>
+                                </div>
+                                <div class="upload_btn">
+                                	上传图片
+                                </div>
+                                <input class="file_input" type="file" />
+                                <div class="url_box">
+                                	<div class="input_text1">
+                                		<input type="text" placeholder="请输入图片URL"/>
+                                	</div>
+                                	<div class="input_text2">检测</div>
+                                </div>
+							</div>
+							<div class="right_results col-lg-6 col-md-6">
+								<div class="res_content">
+									<div class="res_imgbox">
+										<div class="res_ul">
+											<ul>
+												<li><img src="img/face1/img1.png"/></li>
+												<li><img src="img/face1/img2.png"/></li>
+												<li><img src="img/face1/img3.png"/></li>
+												<li><img src="img/face1/img4.png"/></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="res_textbox">
+									<div class="res_mintextbox">
+										<div class="res_title">人脸属性分析</div>
+										<div class="res_text">
+											<div class="res_ulbox">
+												<div class="res_title2">第一个人脸</div>
+												<div class="res_img">
+													<img src="img/face1/img1.png" />
+												</div>
+												<ul>
+													<li>年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龄： <span>26</span></li>
+													<li>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：  <span>男</span></li>
+													<li>显性情绪：  <span>快乐</span></li>
+													<li>隐性情绪：  <span>常态</span></li>
+												</ul>
+												<div class="clear"></div>
+											</div>
+											<div class="res_ulbox">
+												<div class="res_title2">第二个人脸</div>
+												<div class="res_img">
+													<img src="img/face1/img2.png" />
+												</div>
+												<ul>
+													<li>年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龄： <span>26</span></li>
+													<li>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：  <span>男</span></li>
+													<li>显性情绪：  <span>快乐</span></li>
+													<li>隐性情绪：  <span>常态</span></li>
+												</ul>
+												<div class="clear"></div>
+											</div>
+											<div class="res_ulbox">
+												<div class="res_title2">第三个人脸</div>
+												<div class="res_img">
+													<img src="img/face1/img3.png" />
+												</div>
+												<ul>
+													<li>年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龄： <span>26</span></li>
+													<li>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：  <span>女</span></li>
+													<li>显性情绪：  <span>快乐</span></li>
+													<li>隐性情绪：  <span>常态</span></li>
+												</ul>
+												<div class="clear"></div>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="scenario_box">
+							 <h2>应用场景</h2>    
+							 <div class="min_scenario">
+							 	<div class="scenario_img col-lg-3 col-md-6 col-sm-6">
+							 		<img src="img/face1/sc_img1.png"/>
+							 		<div class="scenario_text">
+							 			<div class="dis_table">
+							 				<div class="cell cell_sce">
+							 					人流量统计
+							 				</div>
+							 			</div>
+							 		</div>
+							 	</div>
+							 	<div class="scenario_img col-lg-3 col-md-6 col-sm-6">
+							 		<img src="img/face1/sc_img2.png"/>
+							 		<div class="scenario_text">
+							 			<div class="dis_table">
+							 				<div class="cell cell_sce">
+							 					年龄段统计
+							 				</div>
+							 			</div>
+							 		</div>
+							 	</div>
+							 	<div class="scenario_img col-lg-3 col-md-6 col-sm-6">
+							 		<img src="img/face1/sc_img3.png"/>
+							 		<div class="scenario_text">
+							 			<div class="dis_table">
+							 				<div class="cell cell_sce">
+							 					性别统计
+							 				</div>
+							 			</div>
+							 		</div>
+							 	</div>
+							 	<div class="scenario_img col-lg-3 col-md-6 col-sm-6">
+							 		<img src="img/face1/sc_img4.png"/>
+							 		<div class="scenario_text">
+							 			<div class="dis_table">
+							 				<div class="cell cell_sce">
+							 					表情交互
+							 				</div>
+							 			</div>
+							 		</div>
+							 	</div>
+							 </div>
+							 <div class="clear"></div>
+						</div>
+						<div class="right_content2">
+							<ul>
+								<li class="li_active" >人脸检测</li>
+								<li >人脸对比</li>
+								<li >人脸集合</li>
+								<li >人脸搜索</li>
+								<div class="clear"></div>
+							</ul>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>-->
+				
+				<!--内容部分(人脸集合)-->
+                <div class="max_content">
+					<div class="min_content">
+						<div class="title_jump">
+							<div class="left_titel col-lg-6 col-md-6">
+								<h2>人脸集合</h2>
+								<p>在多个人脸的图片中找到和当前人脸相似度最高的人脸。</p>
+							</div>
+							<div class="right_titel col-lg-6 col-md-6">
+								<div class="right_content">
+									<p>人体识别体验模式</p>
+									<ul>
+										<li >人脸检测</li>
+										<li >人脸对比</li>
+										<li class="li_active">人脸集合</li>
+										<li >人脸搜索</li>
+										<div class="clear"></div>
+									</ul>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="bottom_content">
+							<div class="left_titel title_url col-lg-3 col-md-3">
+                                <div class="collection_upload">
+                                	<div class="upload_box">
+	                                	<div class="upload_img">
+	                                		<img src="img/face1/img1.png" />
+	                                	</div>
+	                                </div>
+	                                <div class="upload_btn">
+	                                	上传图片
+	                                </div>
+	                                <input class="file_input" type="file" />
+                                </div>
+                                
+                                <div class="collection_img">
+                                	<ul>
+	                                	<li><img src="img/face1/img1.png"/></li>
+	                                	<li><img src="img/face1/img1.png"/></li>
+	                                	<li><img src="img/face1/img1.png"/></li>
+	                                </ul>
+                                </div>
+							</div>
+							<div class="left_titel title_url col-lg-3 col-md-3">
+                                
+                                <div class="collection_upload">
+                                	<div class="upload_box">
+	                                	<div class="upload_img">
+	                                		<img src="img/face1/img2.png" />
+	                                	</div>
+	                                </div>
+	                                <div class="upload_btn">
+	                                	上传图片
+	                                </div>
+	                                <input class="file_input" type="file" />
+                                </div>
+                                <div class="collection_img">
+                                	<ul>
+	                                	<li><img src="img/face1/img2.png"/></li>
+	                                	<li><img src="img/face1/img2.png"/></li>
+	                                	<li><img src="img/face1/img2.png"/></li>
+	                                </ul>
+                                </div>
+							</div>
+							<div class="right_results col-lg-6 col-md-6">
+								<div class="threshold_box">
+									<div class="thr_box thr_text">过滤阈值</div>
+									<div class="thr_box thr_input"><input type="range"/></div>
+									<div class="thr_box thr_text2">75%</div>
+								</div>
+								<div class="res_textbox res_textbox2">
+									<div class="res_mintextbox">
+										<div class="res_title">人脸属性</div>
+										<div class="res_text">
+											<div class="res_ulbox">
+												<div class="res_title2">第一个人脸</div>
+												<div class="res_img">
+													<img src="img/face1/img1.png" />
+												</div>
+												<ul>
+													<li>年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龄： <span>26</span></li>
+													<li>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：  <span>男</span></li>
+													<li>显性情绪：  <span>快乐</span></li>
+													<li>隐性情绪：  <span>常态</span></li>
+												</ul>
+												<div class="clear"></div>
+											</div>
+											<div class="res_ulbox">
+												<div class="res_title2">第二个人脸</div>
+												<div class="res_img">
+													<img src="img/face1/img2.png" />
+												</div>
+												<ul>
+													<li>年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龄： <span>26</span></li>
+													<li>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：  <span>男</span></li>
+													<li>显性情绪：  <span>快乐</span></li>
+													<li>隐性情绪：  <span>常态</span></li>
+												</ul>
+												<div class="clear"></div>
+											</div>
+											<div class="res_ulbox">
+												<div class="res_title2">第三个人脸</div>
+												<div class="res_img">
+													<img src="img/face1/img3.png" />
+												</div>
+												<ul>
+													<li>年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龄： <span>26</span></li>
+													<li>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：  <span>女</span></li>
+													<li>显性情绪：  <span>快乐</span></li>
+													<li>隐性情绪：  <span>常态</span></li>
+												</ul>
+												<div class="clear"></div>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="scenario_box">
+							 <h2>应用场景</h2>    
+							 <div class="min_scenario">
+							 	<div class="scenario_img col-lg-3 col-md-6 col-sm-6">
+							 		<img src="img/face1/sc_img1.png"/>
+							 		<div class="scenario_text">
+							 			<div class="dis_table">
+							 				<div class="cell cell_sce">
+							 					人流量统计
+							 				</div>
+							 			</div>
+							 		</div>
+							 	</div>
+							 	<div class="scenario_img col-lg-3 col-md-6 col-sm-6">
+							 		<img src="img/face1/sc_img2.png"/>
+							 		<div class="scenario_text">
+							 			<div class="dis_table">
+							 				<div class="cell cell_sce">
+							 					年龄段统计
+							 				</div>
+							 			</div>
+							 		</div>
+							 	</div>
+							 	<div class="scenario_img col-lg-3 col-md-6 col-sm-6">
+							 		<img src="img/face1/sc_img3.png"/>
+							 		<div class="scenario_text">
+							 			<div class="dis_table">
+							 				<div class="cell cell_sce">
+							 					性别统计
+							 				</div>
+							 			</div>
+							 		</div>
+							 	</div>
+							 	<div class="scenario_img col-lg-3 col-md-6 col-sm-6">
+							 		<img src="img/face1/sc_img4.png"/>
+							 		<div class="scenario_text">
+							 			<div class="dis_table">
+							 				<div class="cell cell_sce">
+							 					表情交互
+							 				</div>
+							 			</div>
+							 		</div>
+							 	</div>
+							 </div>
+							 <div class="clear"></div>
+						</div>
+						<div class="right_content2">
+							<ul>
+								<li class="li_active" >人脸检测</li>
+								<li >人脸对比</li>
+								<li >人脸集合</li>
+								<li >人脸搜索</li>
+								<div class="clear"></div>
+							</ul>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+	</body>
+	<script type="text/javascript" src="js/jquery.min.js" ></script>
+	<script type="text/javascript" src="js/vue.js" ></script>
+	<script type="text/javascript" src="js/nav.js" ></script>
+	<script type="text/javascript" src="js/face_vue.js" ></script>
+</html>
+
